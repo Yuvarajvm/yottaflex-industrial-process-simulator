@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "all_graphs_connected": true,
+    "assets_unique_ids": true,
+    "expected_anomaly_exceptions": [
+      "tank capacity exceeded in controlled TANK_OVER_CAPACITY episode"
+    ],
+    "facilities_unique_ids": true,
+    "foreign_keys_valid": true,
+    "graph_connectivity": {
+      "FAC-001": true,
+      "FAC-002": true,
+      "FAC-003": true
+    },
+    "mass_balance_intervals": 1746,
+    "mass_balance_violations_over_tolerance": 15,
+    "nodes_unique_ids": true,
+    "pipes_unique_ids": true,
+    "pumps_unique_ids": true,
+    "sensors_unique_ids": true,
+    "simulation_asset_membership_complete": true,
+    "simulation_asset_references_valid": true,
+    "simulation_asset_rows": 345,
+    "simulation_asset_unique_pairs": true,
+    "simulation_configuration_consistent": true,
+    "simulation_runs_unique_ids": true,
+    "state_events_unique_ids": true,
+    "tank_over_capacity_readings": 10,
+    "tanks_unique_ids": true,
+    "telemetry_rows": 100000,
+    "telemetry_unique_ids": true,
+    "valves_unique_ids": true
+  },
+  "errors": [],
+  "valid": true
+}

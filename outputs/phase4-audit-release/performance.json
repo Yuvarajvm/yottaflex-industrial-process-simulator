@@ -1,0 +1,16 @@
+{
+  "database_persistence_seconds": 3.6963163999898825,
+  "detected_alarm_count": 12,
+  "detection_seconds": 6.309478400013177,
+  "generation_inclusive_seconds": 2.1303425000078278,
+  "generation_preparation_exclusive_seconds": 0.2090164000110235,
+  "generation_total_seconds": 2.1303425000078278,
+  "simulation_seconds": 1.9213260999968043,
+  "simulation_telemetry_per_second": 52047.38539707878,
+  "telemetry_count": 100000,
+  "telemetry_throughput_per_second": 7196.693551110646,
+  "timing_definition": "Exclusive stages: generation preparation, simulation, detection, database writes. Validation and CLI/output overhead is the residual. generation_inclusive_seconds includes simulation and is informational, not additive. Stages run sequentially.",
+  "timing_stages_sum_seconds": 13.895270000008168,
+  "total_execution_seconds": 13.895270000008168,
+  "validation_and_cli_overhead_seconds": 1.7591326999972807
+}

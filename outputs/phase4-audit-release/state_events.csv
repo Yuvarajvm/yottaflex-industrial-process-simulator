@@ -1,0 +1,39 @@
+event_id,simulation_run_id,asset_id,previous_state,new_state,effective_timestamp,reason
+EVT-000001-000001,SIM-2026-000001,PIPE-001,loss_lpm=0,loss_lpm=20,2026-01-01T00:05:00+00:00,injected leak and recovery
+EVT-000001-000013,SIM-2026-000001,PIPE-001,loss_lpm=20,loss_lpm=0,2026-01-01T00:10:00+00:00,end LEAK episode and restore baseline
+EVT-000001-000002,SIM-2026-000001,PIPE-002,resistance_factor=1.0,resistance_factor=6.0,2026-01-01T00:05:00+00:00,increased pipe resistance and recovery
+EVT-000001-000014,SIM-2026-000001,PIPE-002,resistance_factor=6.0,resistance_factor=1.0,2026-01-01T00:10:00+00:00,end BLOCKAGE episode and restore baseline
+EVT-000001-000003,SIM-2026-000001,PUMP-001,efficiency=1.0,efficiency=0.55,2026-01-01T00:05:00+00:00,pump degradation and recovery
+EVT-000001-000015,SIM-2026-000001,PUMP-001,efficiency=0.55,efficiency=1.0,2026-01-01T00:10:00+00:00,end PUMP_DEGRADATION episode and restore baseline
+EVT-000001-000004,SIM-2026-000001,SNS-001,signal=LIVE,signal=STUCK,2026-01-01T00:05:00+00:00,sensor fault and recovery
+EVT-000001-000016,SIM-2026-000001,SNS-001,signal=STUCK,signal=LIVE,2026-01-01T00:10:00+00:00,end SENSOR_FAULT episode and restore baseline
+EVT-000001-000005,SIM-2026-000001,TANK-001,level=within_capacity,level=capacity_plus_500L,2026-01-01T00:05:00+00:00,over-capacity episode and recovery
+EVT-000001-000017,SIM-2026-000001,TANK-001,level=capacity_plus_500L,level=within_capacity,2026-01-01T00:10:00+00:00,end TANK_OVER_CAPACITY episode and restore baseline
+EVT-000001-000006,SIM-2026-000001,FAC-002,branch_loss_lpm=0,branch_loss_lpm=45,2026-01-01T00:05:00+00:00,flow discrepancy and recovery
+EVT-000001-000018,SIM-2026-000001,FAC-002,branch_loss_lpm=45,branch_loss_lpm=0,2026-01-01T00:10:00+00:00,end FLOW_CONSERVATION_VIOLATION episode and restore baseline
+EVT-000001-000007,SIM-2026-000001,PIPE-004,loss_lpm=0,loss_lpm=8,2026-01-01T00:15:00+00:00,injected leak and recovery
+EVT-000001-000019,SIM-2026-000001,PIPE-004,loss_lpm=8,loss_lpm=0,2026-01-01T00:20:00+00:00,end LEAK episode and restore baseline
+EVT-000001-000008,SIM-2026-000001,PIPE-008,resistance_factor=1.0,resistance_factor=3.0,2026-01-01T00:15:00+00:00,increased pipe resistance and recovery
+EVT-000001-000020,SIM-2026-000001,PIPE-008,resistance_factor=3.0,resistance_factor=1.0,2026-01-01T00:20:00+00:00,end BLOCKAGE episode and restore baseline
+EVT-000001-000009,SIM-2026-000001,PUMP-008,efficiency=1.0,efficiency=0.75,2026-01-01T00:15:00+00:00,pump degradation and recovery
+EVT-000001-000021,SIM-2026-000001,PUMP-008,efficiency=0.75,efficiency=1.0,2026-01-01T00:20:00+00:00,end PUMP_DEGRADATION episode and restore baseline
+EVT-000001-000010,SIM-2026-000001,SNS-007,signal=LIVE,signal=STUCK,2026-01-01T00:15:00+00:00,sensor fault and recovery
+EVT-000001-000022,SIM-2026-000001,SNS-007,signal=STUCK,signal=LIVE,2026-01-01T00:20:00+00:00,end SENSOR_FAULT episode and restore baseline
+EVT-000001-000011,SIM-2026-000001,TANK-008,level=within_capacity,level=capacity_plus_100L,2026-01-01T00:15:00+00:00,over-capacity episode and recovery
+EVT-000001-000023,SIM-2026-000001,TANK-008,level=capacity_plus_100L,level=within_capacity,2026-01-01T00:20:00+00:00,end TANK_OVER_CAPACITY episode and restore baseline
+EVT-000001-000012,SIM-2026-000001,FAC-003,branch_loss_lpm=0,branch_loss_lpm=20,2026-01-01T00:15:00+00:00,flow discrepancy and recovery
+EVT-000001-000024,SIM-2026-000001,FAC-003,branch_loss_lpm=20,branch_loss_lpm=0,2026-01-01T00:20:00+00:00,end FLOW_CONSERVATION_VIOLATION episode and restore baseline
+EVT-000001-000025,SIM-2026-000001,FAC-001,NORMAL,HIGH_DEMAND,2026-01-01T00:25:00+00:00,facility demand mode changed to HIGH_DEMAND
+EVT-000001-000026,SIM-2026-000001,FAC-002,NORMAL,HIGH_DEMAND,2026-01-01T00:25:00+00:00,facility demand mode changed to HIGH_DEMAND
+EVT-000001-000027,SIM-2026-000001,FAC-003,NORMAL,HIGH_DEMAND,2026-01-01T00:25:00+00:00,facility demand mode changed to HIGH_DEMAND
+EVT-000001-000028,SIM-2026-000001,FAC-001,HIGH_DEMAND,MAINTENANCE,2026-01-01T00:30:00+00:00,facility demand mode changed to MAINTENANCE
+EVT-000001-000029,SIM-2026-000001,FAC-002,HIGH_DEMAND,MAINTENANCE,2026-01-01T00:30:00+00:00,facility demand mode changed to MAINTENANCE
+EVT-000001-000030,SIM-2026-000001,FAC-003,HIGH_DEMAND,MAINTENANCE,2026-01-01T00:30:00+00:00,facility demand mode changed to MAINTENANCE
+EVT-000001-000031,SIM-2026-000001,FAC-001,MAINTENANCE,STARTUP,2026-01-01T00:35:00+00:00,facility demand mode changed to STARTUP
+EVT-000001-000032,SIM-2026-000001,FAC-002,MAINTENANCE,STARTUP,2026-01-01T00:35:00+00:00,facility demand mode changed to STARTUP
+EVT-000001-000033,SIM-2026-000001,FAC-003,MAINTENANCE,STARTUP,2026-01-01T00:35:00+00:00,facility demand mode changed to STARTUP
+EVT-000001-000034,SIM-2026-000001,FAC-001,STARTUP,NORMAL,2026-01-01T00:40:00+00:00,facility demand mode changed to NORMAL
+EVT-000001-000035,SIM-2026-000001,FAC-002,STARTUP,NORMAL,2026-01-01T00:40:00+00:00,facility demand mode changed to NORMAL
+EVT-000001-000036,SIM-2026-000001,FAC-003,STARTUP,NORMAL,2026-01-01T00:40:00+00:00,facility demand mode changed to NORMAL
+EVT-000001-000037,SIM-2026-000001,PUMP-001,speed_pct=87.38,speed_pct=100.0,2026-01-01T00:45:00+00:00,scheduled pump speed increase
+EVT-000001-000038,SIM-2026-000001,PUMP-001,speed_pct=100.0,speed_pct=87.38,2026-01-01T00:50:00+00:00,restore configured pump speed

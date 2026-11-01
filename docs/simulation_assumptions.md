@@ -1,0 +1,15 @@
+# Simulation assumptions
+
+Time advances in one-minute steps. Flow is L/min, pressure kPa, stored volume L, pipe diameter mm, pump speed percent and timestamps UTC. For requested telemetry count `N` and sensor count `S`, the run records `ceil(N/S)` steps, truncating only the final step to emit exactly `N` readings. The configuration and run end timestamp record this actual step count and duration. For the full 100,000-row profile, S=172 and steps=582; the run interval is 00:00 through the exclusive 09:42 boundary.
+
+Pump flow is `rated_capacity × speed_pct / 100 × efficiency`. Nominal efficiency is 1.0. The scheduled operating change raises PUMP-001 from its configured 87.38% speed to 100% during minutes 45–50, then restores it. Both transitions have state events with prior/new values, timestamp and reason. The schedule is omitted when the run is too short to include both transition and recovery.
+
+Pipe flow is allocated by normalized conductance weights using `(diameter_mm / 150)^2 × (mean_facility_resistance / pipe_resistance) × (1 / (1 + 0.08 × upstream_node_degree)) × valve_factor`. The controlled blockage divides pipe conductance by a scenario resistance factor (6.0 high, 3.0 mild) while its valve remains OPEN. Pressure applies the increased resistance to the approximate `R × flow²` loss and includes a configured local upstream head response. This head response is an explicit simplification because the model does not solve pressure propagation through a hydraulic network.
+
+Tank inflow and demand are split equally across a facility’s tanks. Per interval, `ΔV = (inflow - outflow - known_loss) × 1 minute`. Residual is calculated against the modeled storage change; controlled unexplained branch loss remains observable above the 10 L tolerance. A blocked branch reduces its conductance-weighted flow and changes local pressure. Over-capacity injections set reported tank volume above capacity during the episode and restore it afterward.
+
+The all-scenarios profile contains 12 episodes: each of six anomaly classes has one HIGH interval at minutes 5–10 and one MEDIUM interval at minutes 15–20 on distinct assets. Normal controls cover minutes 0–5 and 25–40 across three facilities. Operating modes are NORMAL, HIGH_DEMAND (1.3×), MAINTENANCE (0.5×), and STARTUP (0.7×). A seeded PRNG adds independent flow noise `max(0.15 L/min, 0.15% of value)`, pressure noise of 0.25 kPa, and level noise of 0.5 L; noise does not change process state.
+
+The sensor inventory contains 172 instruments: 60 pipe flow, 60 pipe pressure, 30 tank level, 20 pump flow, plus redundant flow pickups on PIPE-001 and PIPE-004. The redundant pickups support sensor-fault discrimination.
+
+This is an educational approximation, not a calibrated digital twin. It does not solve full network hydraulics, junction pressure/head coupling, elevation, fluid properties, transient waves, cavitation, detailed pump curves, or closed-loop control. Tank distribution remains equal; noise is not calibrated; scenarios and rules are fixed controlled cases.

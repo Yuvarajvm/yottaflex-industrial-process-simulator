@@ -1,0 +1,231 @@
+{
+  "alarm_counts_by_severity": {
+    "HIGH": 7,
+    "MEDIUM": 5
+  },
+  "detected_alarms": 12,
+  "duplicate_episode_alarm_count": 0,
+  "event_evaluation_unit": "One ground-truth episode identified by affected asset, expected class and start timestamp; each alarm can match at most one episode.",
+  "event_metrics": {
+    "FN": 0,
+    "FP": 0,
+    "TP": 12,
+    "f1": 1.0,
+    "ground_truth_episodes": 12,
+    "per_anomaly_type": {
+      "BLOCKAGE": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "FLOW_CONSERVATION_VIOLATION": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "LEAK": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "PUMP_DEGRADATION": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "SENSOR_FAULT": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "TANK_OVER_CAPACITY": {
+        "FN": 0,
+        "FP": 0,
+        "TP": 2,
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "ground_truth_loaded_after_predictions": true,
+  "latency": {
+    "last_sample_detection_latency_minutes": {
+      "mean": 4.0,
+      "observed_episodes": 12
+    },
+    "operational_alert_emission_latency_minutes": {
+      "mean": 5.0,
+      "observed_episodes": 12
+    },
+    "per_episode": [
+      {
+        "affected_asset_id": "TANK-001",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "TANK_OVER_CAPACITY",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-TANK-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "SNS-001",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "SENSOR_FAULT",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-SENSOR-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "PUMP-001",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "PUMP_DEGRADATION",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-PUMP-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "PIPE-001",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "LEAK",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-LEAK-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "PIPE-002",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "BLOCKAGE",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-BLOCK-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "FAC-002",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:10:00+00:00",
+        "detection_timestamp": "2026-01-01T00:09:00+00:00",
+        "expected_class": "FLOW_CONSERVATION_VIOLATION",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-BALANCE-HIGH",
+        "start_timestamp": "2026-01-01T00:05:00+00:00"
+      },
+      {
+        "affected_asset_id": "TANK-008",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "TANK_OVER_CAPACITY",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-TANK-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      },
+      {
+        "affected_asset_id": "SNS-007",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "SENSOR_FAULT",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-SENSOR-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      },
+      {
+        "affected_asset_id": "PUMP-008",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "PUMP_DEGRADATION",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-PUMP-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      },
+      {
+        "affected_asset_id": "PIPE-004",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "LEAK",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-LEAK-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      },
+      {
+        "affected_asset_id": "FAC-003",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "FLOW_CONSERVATION_VIOLATION",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-BALANCE-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      },
+      {
+        "affected_asset_id": "PIPE-008",
+        "alert_emission_latency_minutes": 5.0,
+        "alert_emission_timestamp": "2026-01-01T00:20:00+00:00",
+        "detection_timestamp": "2026-01-01T00:19:00+00:00",
+        "expected_class": "BLOCKAGE",
+        "last_sample_latency_minutes": 4.0,
+        "scenario_id": "SCN-BLOCK-MILD",
+        "start_timestamp": "2026-01-01T00:15:00+00:00"
+      }
+    ],
+    "timestamp_semantics": "Last-sample latency uses the timestamp of the final reading in the half-open observation window. Alert-emission latency uses the exclusive window-close timestamp."
+  },
+  "mass_balance_violation_alarm_count": 2,
+  "normal_control_injection_overlaps": [],
+  "normal_window_false_alarm_metrics": {
+    "control_intervals_minutes": [
+      {
+        "end_exclusive": 5,
+        "start": 0
+      },
+      {
+        "end_exclusive": 30,
+        "start": 25
+      },
+      {
+        "end_exclusive": 35,
+        "start": 30
+      },
+      {
+        "end_exclusive": 40,
+        "start": 35
+      }
+    ],
+    "false_alarm_window_rate": 0.0,
+    "false_alarms_by_class": {},
+    "normal_windows": 12,
+    "total_false_alarms": 0,
+    "windows_with_one_or_more_false_alarms": 0
+  },
+  "simulation_run_id": "SIM-2026-000001",
+  "unmatched_alarm_count": 0
+}

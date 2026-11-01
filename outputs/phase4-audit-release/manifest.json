@@ -1,0 +1,181 @@
+{
+  "artifacts": {
+    "../../sql/schema.sql": {
+      "path": "../../sql/schema.sql",
+      "sha256": "4cb64ada475abea49a81d84cfb8d2530a8b7b5bc83fdf725d144397912fd31ed",
+      "size_bytes": 16695
+    },
+    "../../sql/seed_data.sql": {
+      "path": "../../sql/seed_data.sql",
+      "sha256": "bab9f6b3e6cd515180e32f30147824f33bad0eba3d50a0f119dd17a0ec1952aa",
+      "size_bytes": 31553431
+    },
+    "alarms-SIM-2026-000001.csv": {
+      "path": "alarms-SIM-2026-000001.csv",
+      "sha256": "7179ea021fa35eea849ec8578d667b20017eed37e6719a800986b7b65d3704f5",
+      "size_bytes": 4992
+    },
+    "alarms.csv": {
+      "path": "alarms.csv",
+      "sha256": "7179ea021fa35eea849ec8578d667b20017eed37e6719a800986b7b65d3704f5",
+      "size_bytes": 4992
+    },
+    "assets.csv": {
+      "path": "assets.csv",
+      "sha256": "7b21612b7960551d1c9d6f64662c7f222a2932632940e79b61026a2090477401",
+      "size_bytes": 8269
+    },
+    "checksums.json": {
+      "path": "checksums.json",
+      "sha256": "b64fca7964b4a4e78771e841c4324e8ba6d6a133bff55da8bb4f09fe7e80f698",
+      "size_bytes": 1325
+    },
+    "evaluation_summary-SIM-2026-000001.json": {
+      "path": "evaluation_summary-SIM-2026-000001.json",
+      "sha256": "847e4b1a4bbc9ef5e94c1663d6a800072f7cff064054223cc5b1951ebb7fa34b",
+      "size_bytes": 7776
+    },
+    "evaluation_summary.json": {
+      "path": "evaluation_summary.json",
+      "sha256": "847e4b1a4bbc9ef5e94c1663d6a800072f7cff064054223cc5b1951ebb7fa34b",
+      "size_bytes": 7776
+    },
+    "facilities.csv": {
+      "path": "facilities.csv",
+      "sha256": "4c6ed05594e3373986c07132e7cf54d47b0d92975051a461b1c489ffd8eeaed8",
+      "size_bytes": 121
+    },
+    "ground_truth.csv": {
+      "path": "ground_truth.csv",
+      "sha256": "bc17ad106de92a1be8dfa89687930217b5fcfbdc5e45b6c52212a5f13f7634c7",
+      "size_bytes": 2463
+    },
+    "mass_balance.csv": {
+      "path": "mass_balance.csv",
+      "sha256": "54683a4a3d978d3310ba8185b945ed28d16ff4361ba21f4349fe3d2ac808a3b7",
+      "size_bytes": 142432
+    },
+    "nodes.csv": {
+      "path": "nodes.csv",
+      "sha256": "24d519533a5bbf5a871f7508e2397bd892ddfa4b17ceb9f4106c91357485647d",
+      "size_bytes": 1891
+    },
+    "operating_modes.csv": {
+      "path": "operating_modes.csv",
+      "sha256": "074eb11a22407ab7e5810551f5b38f86498a1bb58bfc4d108e0cd80c27a4eb01",
+      "size_bytes": 119
+    },
+    "performance.json": {
+      "path": "performance.json",
+      "sha256": "4f25a81c8bc4fc685971c75b9d968b7a36840fef76ad7e94f395aba24c4f79ac",
+      "size_bytes": 931
+    },
+    "pipes.csv": {
+      "path": "pipes.csv",
+      "sha256": "0659bdfa43ced3ec7eab0cdbfeb70677427c532008407e523d03b1664487e79f",
+      "size_bytes": 4811
+    },
+    "pumps.csv": {
+      "path": "pumps.csv",
+      "sha256": "7d71474158244a33c01c6ed30450bdfed35a5e7400b12e201b06e6115180b45f",
+      "size_bytes": 822
+    },
+    "sensors.csv": {
+      "path": "sensors.csv",
+      "sha256": "79cc8383081df9cdc9803c3899a8c846d91a0aaf5de705d78c931ce82f2c6298",
+      "size_bytes": 7668
+    },
+    "simulation.sqlite": {
+      "path": "simulation.sqlite",
+      "sha256": "8a38c407d6b0661cb10accad5204a55890ec8fb5e0a004e050e03721d22005b2",
+      "size_bytes": 20013056
+    },
+    "simulation_assets.csv": {
+      "path": "simulation_assets.csv",
+      "sha256": "7dd66972f936f51ee4664816e48a4d796a96952dc52d5956dcbb81006adbb76e",
+      "size_bytes": 8883
+    },
+    "simulation_runs.csv": {
+      "path": "simulation_runs.csv",
+      "sha256": "9bbcca21ac27e67917b3c118fb7acfe42ace4e7983a7901c2e6c6d79b366dbae",
+      "size_bytes": 52816
+    },
+    "state_events.csv": {
+      "path": "state_events.csv",
+      "sha256": "e1b472808bad162426bd1ab976c056dcecfebee805309cbd49b35d1e6f185e13",
+      "size_bytes": 5366
+    },
+    "tanks.csv": {
+      "path": "tanks.csv",
+      "sha256": "249c96f8d7e2e68cc7f4979398b104d9ec93a2d5cd34e0e7a704839aa4944f98",
+      "size_bytes": 1347
+    },
+    "telemetry.csv": {
+      "path": "telemetry.csv",
+      "sha256": "88bfa77a7516b7c42a8c4b04bc7003e895114959ac8bd6fa4d53d63c2aca3145",
+      "size_bytes": 11327455
+    },
+    "validation_summary.json": {
+      "path": "validation_summary.json",
+      "sha256": "5ab72e2509369b0da9bd364714f2e601f67c74aae55ef531a8c213af92675659",
+      "size_bytes": 1113
+    },
+    "valves.csv": {
+      "path": "valves.csv",
+      "sha256": "321504bb45ecc0481431f02bafa91e737e29ce7af9fc84389089865ae28e7050",
+      "size_bytes": 2276
+    }
+  },
+  "generator_version": "2.0.0",
+  "ground_truth_sha256": "bc17ad106de92a1be8dfa89687930217b5fcfbdc5e45b6c52212a5f13f7634c7",
+  "manifest_hash_note": "manifest.json is intentionally excluded because a file cannot contain its own stable SHA-256.",
+  "parameters": {
+    "facilities": 3,
+    "pipes": 60,
+    "profile": "full",
+    "pumps": 20,
+    "run_number": 1,
+    "scenario": "all",
+    "seed": 20261022,
+    "steps": 582,
+    "tanks": 30,
+    "telemetry_count": 100000,
+    "valves": 60
+  },
+  "row_counts": {
+    "alarms": 12,
+    "assets": 345,
+    "facilities": 3,
+    "ground_truth": 12,
+    "mass_balance": 1746,
+    "nodes": 50,
+    "operating_modes": 4,
+    "pipes": 60,
+    "pumps": 20,
+    "sensors": 172,
+    "simulation_assets": 345,
+    "simulation_runs": 1,
+    "state_events": 38,
+    "tanks": 30,
+    "telemetry": 100000,
+    "valves": 60
+  },
+  "seed": 20261022,
+  "sha256": {
+    "alarms.csv": "7179ea021fa35eea849ec8578d667b20017eed37e6719a800986b7b65d3704f5",
+    "assets.csv": "7b21612b7960551d1c9d6f64662c7f222a2932632940e79b61026a2090477401",
+    "facilities.csv": "4c6ed05594e3373986c07132e7cf54d47b0d92975051a461b1c489ffd8eeaed8",
+    "mass_balance.csv": "54683a4a3d978d3310ba8185b945ed28d16ff4361ba21f4349fe3d2ac808a3b7",
+    "nodes.csv": "24d519533a5bbf5a871f7508e2397bd892ddfa4b17ceb9f4106c91357485647d",
+    "operating_modes.csv": "074eb11a22407ab7e5810551f5b38f86498a1bb58bfc4d108e0cd80c27a4eb01",
+    "pipes.csv": "0659bdfa43ced3ec7eab0cdbfeb70677427c532008407e523d03b1664487e79f",
+    "pumps.csv": "7d71474158244a33c01c6ed30450bdfed35a5e7400b12e201b06e6115180b45f",
+    "sensors.csv": "79cc8383081df9cdc9803c3899a8c846d91a0aaf5de705d78c931ce82f2c6298",
+    "simulation_assets.csv": "7dd66972f936f51ee4664816e48a4d796a96952dc52d5956dcbb81006adbb76e",
+    "simulation_runs.csv": "9bbcca21ac27e67917b3c118fb7acfe42ace4e7983a7901c2e6c6d79b366dbae",
+    "state_events.csv": "e1b472808bad162426bd1ab976c056dcecfebee805309cbd49b35d1e6f185e13",
+    "tanks.csv": "249c96f8d7e2e68cc7f4979398b104d9ec93a2d5cd34e0e7a704839aa4944f98",
+    "telemetry.csv": "88bfa77a7516b7c42a8c4b04bc7003e895114959ac8bd6fa4d53d63c2aca3145",
+    "valves.csv": "321504bb45ecc0481431f02bafa91e737e29ce7af9fc84389089865ae28e7050"
+  }
+}

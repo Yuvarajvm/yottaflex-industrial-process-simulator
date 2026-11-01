@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.pytesttmp/
+*.py[cod]
+.venv/
+outputs/*
+!outputs/phase4-audit-release/
+!outputs/phase4-audit-release/**
+data/generated/*
+!outputs/.gitkeep
+!data/generated/.gitkeep

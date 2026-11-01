@@ -1,0 +1,4 @@
+outputs/phase4-audit-release/*.csv -text
+outputs/phase4-audit-release/*.json -text
+sql/schema.sql -text
+sql/seed_data.sql -text
